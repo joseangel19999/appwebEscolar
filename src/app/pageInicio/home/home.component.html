@@ -1,0 +1,29 @@
+<mat-sidenav-container fullscreen>
+
+    <mat-toolbar color="primary">
+        <h2>SISTEMA ESCOLAR CODE</h2>
+        <small class="spacer"></small>
+        <!--   <button mat-button>Login</button> -->
+        <a class="title2" routerLink="/pagaInicio/bienvenida" mat-button>
+            <span>Bienvenida</span>
+        </a>
+        <!-- routerLink="/pagaInicio/login" -->
+        <a class="title2" mat-button (click)="mostrarLogin()">
+            <span>Login</span>
+        </a>
+        <a class="title2" routerLink="/pagaInicio/login" mat-button>
+            <span>Acerca de</span>
+        </a>
+    </mat-toolbar>
+    <div class="container">
+
+        <router-outlet></router-outlet>
+        <footer>
+            <div class="contenedorFooter " style="background-color: rgb(188, 195, 202);">
+                <p class="title2">Intitucion Academica de monterrey &copy; 2019</p>
+                <div class="sociales">
+                </div>
+            </div>
+        </footer>
+    </div>
+</mat-sidenav-container>

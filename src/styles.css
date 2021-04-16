@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/* se declara un estilo global para poner todo a la izquierda */
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.containerIMG {
+    background-image: url("https://masteroficial.us.es/maes/sites/masteroficial.us.es.maes/files/fondo_pantalla_maes_0.png");
+    width: 1500px;
+    height: 500px;
+}
+
+.colorBackGround {
+    background-color: rgb(217, 220, 223);
+}
+
+.ml-5 {
+    margin-left: 10px;
+}
+
+.ml-4 {
+    margin-left: 9px;
+}
+
+.ml-19 {
+    margin-left: 19px;
+}

@@ -1,0 +1,34 @@
+<mat-sidenav-container fullscreen class="colorBackGround">
+    <mat-sidenav #sidenav mode="side" opened>
+        <mat-toolbar color="primary">
+            <span>Menu Administrativo</span>
+            <small class="spacer"></small>
+        </mat-toolbar>
+        <mat-nav-list class="navlist">
+            <a [routerLink]="item.ruta" *ngFor="let item of menuEscolar" routerLinkActive="active" mat-list-item>
+                <mat-icon mat-list-icon>
+                    {{ item.icono }}</mat-icon>
+                <span>{{ item.nombre }}</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="mostrarCerrar(sidenav)">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <small class="spacer"></small>
+        <app-menu-toggle></app-menu-toggle>
+    </mat-toolbar>
+    <div>
+        <router-outlet></router-outlet>
+        <!--  <footer>
+            <div class="contenedorFooter " color="primary" style="background-color: rgb(183, 187, 196);">
+                <p class="title2"><strong>
+                    Universidades Mexicanas &copy; 2021
+                </strong> </p>
+                <div class="sociales">
+                </div>
+            </div>
+        </footer> -->
+    </div>
+</mat-sidenav-container>

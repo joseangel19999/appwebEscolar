@@ -1,0 +1,26 @@
+<div fxLayout="Column" fxLayoutGap="20px">
+    <div fxFlex="50">
+        <mat-card>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-header>
+                <mat-card-title class="textCentrado">Ingrese sus datos</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <form fxLayout="Column">
+                    <mat-form-field>
+                        <mat-label>Correo</mat-label>
+                        <input matInput type="email">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password">
+                    </mat-form-field>
+                    <div>
+                        <button mat-raised-button color="primary" (click)="loginUsuario()">Logear</button> /
+                        <button mat-raised-button color="warn" (click)="cerrarDialog()">Cerrar</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

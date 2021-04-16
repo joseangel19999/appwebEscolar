@@ -1,0 +1,24 @@
+.title2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.contenedorFooter {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.navlist {
+    height: 88%;
+    background-color: rgb(206, 210, 219);
+}

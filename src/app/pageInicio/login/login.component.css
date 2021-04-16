@@ -1,0 +1,12 @@
+.example-header-image {
+    background-image: url('https://rciminternet.com/wp-content/uploads/2019/04/usuario.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+}
+
+.textCentrado {
+    text-align: center;
+    margin-left: 50px;
+}
