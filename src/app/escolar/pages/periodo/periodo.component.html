@@ -1,1 +1,72 @@
-<p>periodo works!</p>
+<div fxLayout="Column" class="contenedor">
+    <div fxLayout="row">
+        <app-menu-registrar (propagar)="textBtnRegisModifi=($event)"></app-menu-registrar>
+        <div fxFlex="50" fxLayout="Column">
+            <h1 fxFlexAlign="center">Periodos</h1>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxFlexAlign="row">
+        <div class="paddingTop" fxFlex="30" fxFlexAlign="left" style="margin-left: 30px;">
+            <mat-card class="cardRegistro">
+                <mat-card-header>
+                    <mat-card-title>Ingrese los datos</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <form fxLayout="Column">
+                        <mat-form-field>
+                            <mat-label>Periodo</mat-label>
+                            <input matInput type="number">
+                        </mat-form-field>
+                        <div fxFlexAlign="left" fxLayoutGap.>
+                            <button mat-raised-button color="primary">{{ textBtnRegisModifi }}</button>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex="50" class="paddingTop">
+            <mat-card class="cardTabla">
+                <mat-sidenav-container>
+                    <mat-form-field fxFlex="70">
+                        <mat-label>Filtrar por periodo</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <table mat-table [dataSource]="dataSource">
+                        <tr mat-header-row *matHeaderRowDef="cabezeraTblPeriodos"></tr>
+                        <tr class="cursor" mat-row *matRowDef="let row; columns: cabezeraTblPeriodos" (click)="selectedRow = row" [ngClass]="{ 'selected': row === selectedRow }">
+                        </tr>
+
+                        <ng-container matColumnDef="posicion">
+                            <th mat-header-cell *matHeaderCellDef>No.</th>
+                            <td mat-cell *matCellDef="let element; let i = index">{{ i+1 }}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="periodo">
+                            <th mat-header-cell *matHeaderCellDef>Periodo</th>
+                            <td mat-cell *matCellDef="let element">{{ element.periodo }}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="acciones">
+                            <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                            <td mat-cell *matCellDef="let element; let i=index">
+                                <button (click)="Modificar()" class="btn" mat-raised-button color="primary">
+                                    <span class="material-icons">
+                                        drive_file_rename_outline
+                                        </span>
+                                </button> /
+                                <button class="btn" mat-raised-button color="warn">
+                                    <span class="material-icons">
+                                        delete_sweep
+                                        </span>
+                                </button>
+                            </td>
+                        </ng-container>
+                    </table>
+                    <mat-paginator [pageSizeOptions]="[2, 10, 25, 100]"></mat-paginator>
+                </mat-sidenav-container>
+            </mat-card>
+
+        </div>
+    </div>
+</div>

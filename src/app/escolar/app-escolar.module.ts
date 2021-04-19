@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import { ProfesoresComponent } from './pages/profesores/profesores.component';
 import { CalificacionesComponent } from './pages/calificaciones/calificaciones.component';
 import { PeriodoComponent } from './pages/periodo/periodo.component';
+import { MenuRegistrarComponent } from './components/menu-registrar/menu-registrar.component';
+
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { PeriodoComponent } from './pages/periodo/periodo.component';
     MateriasComponent, 
     HomeAdminComponent, 
     BienvedidoComponent, 
-    MenuToggleComponent, ProfesoresComponent, CalificacionesComponent, PeriodoComponent,
+    MenuToggleComponent, ProfesoresComponent, CalificacionesComponent, PeriodoComponent, MenuRegistrarComponent,
 
   
   ],

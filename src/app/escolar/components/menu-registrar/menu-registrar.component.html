@@ -1,0 +1,9 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+<mat-menu #menu="matMenu">
+    <button (click)="nuevoRegistro()" mat-menu-item>
+      <mat-icon>  drive_file_rename_outline</mat-icon>
+      <span>Nuevo Periodo2</span>
+    </button>
+</mat-menu>

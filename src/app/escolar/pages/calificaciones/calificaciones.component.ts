@@ -36,6 +36,8 @@ export class CalificacionesComponent implements OnInit {
     page_size:number=3;
     page_number:number=1;
     pageSizeOptions=[3,5,10];
+    selectedRow;
+    textBtnRegisModifi:string="Registrar";
  
     profesores:UserData[]=[
       {id:1,nombreCompleto:'Jose angel hernandez hernandez',matricula:'8767868'},
@@ -78,4 +80,10 @@ export class CalificacionesComponent implements OnInit {
   }
 
   disableSelect = new FormControl(false);
+  Modificar(){
+    this.textBtnRegisModifi="Guardar"
+  }
+  
+  selectRow(row) { this.selectedRow = row; 
+  }
 }

@@ -22,7 +22,8 @@ export class ProfesoresComponent implements OnInit {
    page_size:number=3;
    page_number:number=1;
    pageSizeOptions=[3,5,10];
-
+   textBtnRegisModifi:string="Registrar";
+   selectedRow;
    profesores:UserData[]=[
      {id:1,nombreCompleto:'Jose angel hernandez hernandez',correo:'jose123_uthh@gmail.com'},
      {id:2,nombreCompleto:'Jose angel',correo:'jose@gmail.com'},
@@ -50,5 +51,14 @@ export class ProfesoresComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+  nuevoRegistro(){
+    this.textBtnRegisModifi="Registrar";
+  }
+  Modificar(){
+    this.textBtnRegisModifi="Guardar"
+  }
+  
+  selectRow(row) { this.selectedRow = row; 
   }
 }
