@@ -292,7 +292,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/paginator */ "M9IT");
 /* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/flex-layout */ "YUcS");
 /* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/select */ "d3UM");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/datepicker */ "iadO");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/core */ "FKr1");
+
+
 
 
 
@@ -315,8 +319,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class MaterialModuleModule {
 }
-MaterialModuleModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineNgModule"]({ type: MaterialModuleModule });
-MaterialModuleModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineInjector"]({ factory: function MaterialModuleModule_Factory(t) { return new (t || MaterialModuleModule)(); }, imports: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardModule"],
+MaterialModuleModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵdefineNgModule"]({ type: MaterialModuleModule });
+MaterialModuleModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵdefineInjector"]({ factory: function MaterialModuleModule_Factory(t) { return new (t || MaterialModuleModule)(); }, imports: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardModule"],
         _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
         _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatFormFieldModule"],
@@ -334,8 +338,10 @@ MaterialModuleModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵde
         _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_12__["MatSnackBarModule"],
         _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__["MatDividerModule"],
         _angular_material_paginator__WEBPACK_IMPORTED_MODULE_15__["MatPaginatorModule"],
-        _angular_material_select__WEBPACK_IMPORTED_MODULE_17__["MatSelectModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵsetNgModuleScope"](MaterialModuleModule, { exports: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardModule"],
+        _angular_material_select__WEBPACK_IMPORTED_MODULE_17__["MatSelectModule"],
+        _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_18__["MatDatepickerModule"],
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_20__["MatNativeDateModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵsetNgModuleScope"](MaterialModuleModule, { exports: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardModule"],
         _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
         _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatFormFieldModule"],
@@ -353,9 +359,11 @@ MaterialModuleModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵde
         _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_12__["MatSnackBarModule"],
         _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__["MatDividerModule"],
         _angular_material_paginator__WEBPACK_IMPORTED_MODULE_15__["MatPaginatorModule"],
-        _angular_material_select__WEBPACK_IMPORTED_MODULE_17__["MatSelectModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵsetClassMetadata"](MaterialModuleModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_18__["NgModule"],
+        _angular_material_select__WEBPACK_IMPORTED_MODULE_17__["MatSelectModule"],
+        _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_18__["MatDatepickerModule"],
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_20__["MatNativeDateModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵsetClassMetadata"](MaterialModuleModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_19__["NgModule"],
         args: [{
                 exports: [
                     _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardModule"],
@@ -377,6 +385,8 @@ MaterialModuleModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵde
                     _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__["MatDividerModule"],
                     _angular_material_paginator__WEBPACK_IMPORTED_MODULE_15__["MatPaginatorModule"],
                     _angular_material_select__WEBPACK_IMPORTED_MODULE_17__["MatSelectModule"],
+                    _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_18__["MatDatepickerModule"],
+                    _angular_material_core__WEBPACK_IMPORTED_MODULE_20__["MatNativeDateModule"],
                 ]
             }]
     }], null, null); })();
