@@ -19,13 +19,35 @@
     background-color: beige;
 }
 
+.labelSelect {
+    padding-top: 12px;
+    margin-right: 5px;
+}
+
+.mg-top-10 {
+    margin-top: 10px;
+}
+
 .card {
     border: black;
 }
 
-.cardRegistro {
-    border: black;
-    width: 80%;
+.select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 25px;
+    padding: 5px;
+    width: 180px;
+}
+
+.cardFiltrado {
+    border: black solid;
+    width: 500px;
+    height: 20%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 .cardTabla {
@@ -67,7 +89,7 @@ th {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 10% !important;
-    width: 10% !important;
+    width: 5% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -77,11 +99,11 @@ th {
     hyphens: auto;
 }
 
-.mat-column-posicion {
+.mat-column-matricula {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 10% !important;
-    width: 30% !important;
+    width: 8% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -95,7 +117,7 @@ th {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 10% !important;
-    width: 30% !important;
+    width: 17% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -105,11 +127,39 @@ th {
     hyphens: auto;
 }
 
-.mat-column-periodo {
+.mat-column-correo {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 5% !important;
-    width: 25% !important;
+    width: 20% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.mat-column-telefono {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 5% !important;
+    width: 12% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.mat-column-direccion {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 5% !important;
+    width: 15% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;

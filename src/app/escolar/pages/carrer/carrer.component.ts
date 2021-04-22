@@ -1,50 +1,44 @@
-import { StmtModifier } from '@angular/compiler';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MenuRegistrarComponent } from '../../components/menu-registrar/menu-registrar.component';
 
-interface periodoData {
+interface gradodoData {
   id:number,
-  periodo: number;
+  carrera: string;
 }
-
 @Component({
-  selector: 'app-periodo',
-  templateUrl: './periodo.component.html',
-  styleUrls: ['./periodo.component.css']
+  selector: 'app-carrer',
+  templateUrl: './carrer.component.html',
+  styleUrls: ['./carrer.component.css']
 })
-export class PeriodoComponent implements OnInit {
+export class CarrerComponent implements OnInit {
  //cabezera de la tabla
- cabezeraTblPeriodos: string[] = ['posicion', 'periodo','acciones'];
- @ViewChild(MatPaginator) paginador:MatPaginator;
- public dataSource = new MatTableDataSource;
- page_size:number=3;
- page_number:number=1;
- pageSizeOptions=[3,5,10];
- //
+ displayedColumns: string[] = ['posicion', 'carrera', 'acciones'];
  textBtnRegisModifi:string="Registrar";
  selectedRow;
+ @ViewChild(MatPaginator) paginador:MatPaginator;
+ public dataSource = new MatTableDataSource;
 
   //mandar evento a componente hijo
   @ViewChild(MenuRegistrarComponent) menuComponent: MenuRegistrarComponent;
 
- listaPeriodos:periodoData[]=[
-   {id:1,periodo:2010},
-   {id:2,periodo:2011},
-   {id:3,periodo:2012},
-   {id:4,periodo:2013},
-   {id:5,periodo:2014},
+  listaCarreras:gradodoData[]=[
+    {id:1,carrera:'Lic en Derecho'},
+    {id:2,carrera:'Lic en administracion de empresas'},
+    {id:3,carrera:'Ing en sistemas'},
+    {id:4,carrera:'Ing en agronomia'},
+  ]
 
- ]
+  encabezadoGrados:string[]=['No','Nombre','Acciones'];
   constructor() { }
 
   ngOnInit(): void {
-    this.dataSource.data=this.listaPeriodos;
+    this.dataSource.data=this.listaCarreras;
   }
-  
+
   asiganarText(){
-    this.menuComponent.asigarText("Nuevo periodo");
+    this.menuComponent.asigarText("Nuevo Carrera");
   }
   
   nuevoRegistro(){

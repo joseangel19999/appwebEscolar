@@ -12,6 +12,9 @@ import { ProfesoresComponent } from './pages/profesores/profesores.component';
 import { CalificacionesComponent } from './pages/calificaciones/calificaciones.component';
 import { PeriodoComponent } from './pages/periodo/periodo.component';
 import { MenuRegistrarComponent } from './components/menu-registrar/menu-registrar.component';
+import { AlumnoComponent } from './pages/alumno/alumno.component';
+import { RegistroAlumnoComponent } from './components/registro-alumno/registro-alumno.component';
+import { CarrerComponent } from './pages/carrer/carrer.component';
 
 
 
@@ -22,7 +25,7 @@ import { MenuRegistrarComponent } from './components/menu-registrar/menu-registr
     MateriasComponent, 
     HomeAdminComponent, 
     BienvedidoComponent, 
-    MenuToggleComponent, ProfesoresComponent, CalificacionesComponent, PeriodoComponent, MenuRegistrarComponent,
+    MenuToggleComponent, ProfesoresComponent, CalificacionesComponent, PeriodoComponent, MenuRegistrarComponent, AlumnoComponent, RegistroAlumnoComponent, CarrerComponent,
 
   
   ],

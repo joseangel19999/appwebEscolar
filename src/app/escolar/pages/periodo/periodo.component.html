@@ -1,7 +1,7 @@
 <div fxLayout="Column" class="contenedor">
     <div fxLayout="row">
-        <app-menu-registrar (propagar)="textBtnRegisModifi=($event)"></app-menu-registrar>
-        <div fxFlex="50" fxLayout="Column">
+        <app-menu-registrar (click)="asiganarText()" (propagar)="textBtnRegisModifi=($event)"></app-menu-registrar>
+        <div fxFlex="80" fxLayout="Column">
             <h1 fxFlexAlign="center">Periodos</h1>
         </div>
     </div>

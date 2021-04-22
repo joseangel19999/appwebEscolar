@@ -1,30 +1,35 @@
 <div class="contenedor" fxLayout="Column">
-    <h1 fxLayoutAlign="center">Materias</h1>
+    <div fxLayout="row">
+        <app-menu-registrar (click)="asiganarText()" (propagar)="textBtnRegisModifi=($event)"></app-menu-registrar>
+        <div fxFlex="80" fxLayout="Column">
+            <h1 fxFlexAlign="center">Materias</h1>
+        </div>
+    </div>
     <mat-divider></mat-divider>
     <div fxLayout="row">
         <div class="paddingTop" fxFlex="30" fxFlexAlign="left" style="margin-left: 30px;">
             <mat-card class="cardRegistro">
-                <div mat-card-avatar class="example-header-image"></div>
                 <mat-card-header>
-                    <mat-card-title>Materias</mat-card-title>
+                    <mat-card-title>Ingrese los datos</mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
                     <form fxLayout="Column">
                         <mat-form-field>
-                            <mat-label>Filtrar por grado</mat-label>
+                            <mat-label>Nombre Carerra</mat-label>
                             <input matInput type="text">
                         </mat-form-field>
                         <mat-form-field>
-                            <mat-label>Descripcion</mat-label>
-                            <input matInput type="text">
+                            <mat-label>Grado</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">1 semestre</mat-option>
+                                <mat-option value="option1">2 semestre</mat-option>
+                                <mat-option value="option1">3 semestre</mat-option>
+                                <mat-option value="option3">4 semestre</mat-option>
+                            </mat-select>
                         </mat-form-field>
-                        <mat-label class="labelSelect ml-4">Periodo</mat-label>
-                        <select class="select mg-top-10">
-                            <option value="option1">2021</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option1">Option 1</option>
-                        </select>
+                        <div fxFlexAlign="left" fxLayoutGap.>
+                            <button mat-raised-button color="primary">{{ textBtnRegisModifi }}</button>
+                        </div>
                     </form>
                 </mat-card-content>
             </mat-card>
@@ -38,7 +43,7 @@
                     </mat-form-field>
                     <table mat-table [dataSource]="dstaSource">
                         <tr mat-header-row *matHeaderRowDef="cabezeraTblMaterias"></tr>
-                        <tr mat-row *matRowDef="let row; columns: cabezeraTblMaterias"></tr>
+                        <tr mat-row *matRowDef="let row; columns: cabezeraTblMaterias" (click)="selectedRow = row" [ngClass]="{ 'selected': row === selectedRow }"></tr>
 
                         <ng-container matColumnDef="posicion">
                             <th mat-header-cell *matHeaderCellDef>No.</th>
@@ -55,7 +60,7 @@
                         <ng-container matColumnDef="acciones">
                             <th mat-header-cell *matHeaderCellDef>Acciones</th>
                             <td mat-cell *matCellDef="let element; let i = index;">
-                                <button class="btn" mat-raised-button color="primary">
+                                <button (click)="Modificar()" class="btn" mat-raised-button color="primary">
                                     <span class="material-icons">
                                         drive_file_rename_outline
                                         </span>

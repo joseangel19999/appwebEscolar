@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { MenuRegistrarComponent } from '../../components/menu-registrar/menu-registrar.component';
 
  interface UserData {
   id:number,
@@ -24,6 +25,9 @@ export class ProfesoresComponent implements OnInit {
    pageSizeOptions=[3,5,10];
    textBtnRegisModifi:string="Registrar";
    selectedRow;
+  //mandar evento a componente hijo
+  @ViewChild(MenuRegistrarComponent) menuComponent: MenuRegistrarComponent;
+
    profesores:UserData[]=[
      {id:1,nombreCompleto:'Jose angel hernandez hernandez',correo:'jose123_uthh@gmail.com'},
      {id:2,nombreCompleto:'Jose angel',correo:'jose@gmail.com'},
@@ -39,8 +43,10 @@ export class ProfesoresComponent implements OnInit {
     this.dataSource.data=this.profesores;
   }
 
-
-
+  asiganarText(){
+    this.menuComponent.asigarText("Nuevo profersor");
+  }
+  
 
  
 

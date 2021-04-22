@@ -9,6 +9,8 @@ import { BienvedidoComponent } from './pages/bienvedido/bienvedido.component';
 import { CalificacionesComponent } from './pages/calificaciones/calificaciones.component';
 import { PeriodoComponent } from './pages/periodo/periodo.component';
 import { ProfesoresComponent } from './pages/profesores/profesores.component';
+import { AlumnoComponent } from './pages/alumno/alumno.component';
+import { CarrerComponent } from './pages/carrer/carrer.component';
 
 const escolarRouting:Routes=[
   {path:'',
@@ -17,10 +19,12 @@ const escolarRouting:Routes=[
       {path:'bienvenido',component:BienvedidoComponent},
       {path:'calificacion',component:CalificacionesComponent},
       {path:'grado',component:GradosComponent},
+      {path:'carrera',component:CarrerComponent},
       {path:'grupo',component:GrupoComponent},
       {path:'materia',component:MateriasComponent},
       {path:'periodo',component:PeriodoComponent},
       {path:'profesor',component:ProfesoresComponent},
+      {path:'alumnos',component:AlumnoComponent},
       {path:'**',redirectTo:'bienvenido'}
     ]
   }

@@ -17,8 +17,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { NgModule } from '@angular/core';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { NgModule } from '@angular/core';
     MatDividerModule,
     MatPaginatorModule,
     MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule, 
   ]
 })
 export class MaterialModuleModule { }

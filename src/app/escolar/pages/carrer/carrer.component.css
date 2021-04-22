@@ -81,7 +81,7 @@ th {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 10% !important;
-    width: 30% !important;
+    width: 15% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -91,11 +91,11 @@ th {
     hyphens: auto;
 }
 
-.mat-column-nombre {
+.mat-column-carrera {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 10% !important;
-    width: 30% !important;
+    width: 40% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -105,11 +105,11 @@ th {
     hyphens: auto;
 }
 
-.mat-column-periodo {
+.mat-column-acciones {
     word-wrap: break-word !important;
     white-space: unset !important;
     flex: 0 0 5% !important;
-    width: 25% !important;
+    width: 70% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;

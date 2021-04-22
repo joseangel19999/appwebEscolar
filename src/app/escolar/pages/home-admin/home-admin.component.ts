@@ -29,9 +29,11 @@ export class HomeAdminComponent implements OnInit {
   menuEscolar:menuItem[]=[
 
     { nombre:'Profesores',ruta:'./profesor',icono:'turned_in_not'},
-    {nombre:'Grupos',ruta:'./grupo',icono:'assignment'},
+    { nombre:'alumnos',ruta:'./alumnos',icono:'turned_in_not'},
     {nombre:'Calificaciones',ruta:'./calificacion',icono:'turned_in_not'},
+    {nombre:'Grupos',ruta:'./grupo',icono:'assignment'},
     {nombre:'Grados',ruta:'./grado',icono:'library_books'},
+    {nombre:'Carrea',ruta:'./carrera',icono:'library_books'},
     {nombre:'Periodo',ruta:'./periodo',icono:'article'},
     {nombre:'Materia',ruta:'./materia',icono:'article'},
     {nombre:'Bienvenido',ruta:'./bienvenido',icono:'article'},
